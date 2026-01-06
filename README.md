@@ -1,6 +1,10 @@
 # 📘 Bayesian Black-Box Optimisation (BBO) Capstone Project  
 *A multi-round optimisation challenge using Gaussian Processes and adaptive exploration strategies.*
 
+## Additional Documentation
+- [Datasheet](DATASHEET.md)
+- [Model Card](MODEL_CARD.md)
+
 ## 1. Project Overview
 
 This repository documents my work for the **Imperial College London BBO Capstone Project**, where the task is to optimise eight unknown (“black-box”) functions. Each function accepts continuous numerical inputs and returns a single scalar output, simulating real-world problems such as chemical yield optimisation, hyperparameter tuning, or industrial process control.
