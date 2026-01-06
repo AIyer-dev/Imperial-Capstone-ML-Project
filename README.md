@@ -95,7 +95,6 @@ At this stage, decisions relied more on model-informed reasoning and less on bro
 ### **Exploration vs Exploitation**
 My approach balances exploration early on where structure is unknown, then shifts toward exploitation as high-value basins emerge. The strategy is unique per function rather than uniform across all eight.
 
-
 ### **Week 4 → Early Exploitation and Pattern Confirmation**
 By Week 4, several functions began to show repeatable structure rather than random variation. The strategy shifted toward **confirming promising regions** rather than discovering new ones.
 
@@ -106,7 +105,6 @@ By Week 4, several functions began to show repeatable structure rather than rand
 
 This week marked the transition from global exploration to function-specific optimisation.
 
-
 ### **Week 5 → Trust-Region Optimisation**
 In Week 5, I adopted an explicit **trust-region mindset**. Instead of moving broadly, I made small, interpretable perturbations around the best-known points for each function.
 
@@ -115,7 +113,6 @@ In Week 5, I adopted an explicit **trust-region mindset**. Instead of moving bro
 - **F3** was refined cautiously due to noisy behaviour.
 
 This reduced variance and improved interpretability of results.
-
 
 ### **Week 6 → Convergence Signals and Stability Checks**
 Week 6 focused on distinguishing **true convergence from temporary improvements**.
@@ -127,7 +124,6 @@ Week 6 focused on distinguishing **true convergence from temporary improvements*
 
 At this point, exploration was only used where uncertainty remained justified.
 
-
 ### **Week 7 → Late-Stage Refinement**
 By Week 7, optimisation became increasingly conservative.
 
@@ -136,7 +132,6 @@ By Week 7, optimisation became increasingly conservative.
 - Performance stability became as important as raw improvement.
 
 This mirrors real-world optimisation, where robustness often outweighs marginal gains.
-
 
 ### **Week 8 → Selective Investment**
 Week 8 introduced **selective optimisation**, where effort was concentrated only on functions that still showed meaningful returns.
@@ -147,7 +142,6 @@ Week 8 introduced **selective optimisation**, where effort was concentrated only
 
 This prevented wasted queries on flat or converged objectives.
 
-
 ### **Week 9 → Pre-Convergence Strategy**
 By Week 9, the strategy clearly reflected a **pre-convergence phase**.
 
@@ -156,7 +150,6 @@ By Week 9, the strategy clearly reflected a **pre-convergence phase**.
 - Emphasis shifted toward reproducibility and stability rather than aggressive search.
 
 This stage prioritised defensible optimisation decisions over speculative exploration.
-
 
 ### **Week 10 → Consolidation and Risk Management**
 Week 10 focused on consolidating gains while managing late-stage risk.
