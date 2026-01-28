@@ -216,4 +216,15 @@ Across thirteen optimisation iterations, the final submissions reflect the best 
 - **F7:** Reached a clear global optimum early in the project, which was never surpassed and successfully re-confirmed in later rounds.
 - **F8:** Displayed a hard saturation plateau once key dimensions were maximised; repeated submissions produced identical outputs.
 
+| Function | Observed Behaviour            | Final Outcome                              |
+|----------|------------------------------|---------------------------------------------|
+| F1       | Flat / no signal              | Neutral input confirmed; no optimisation    |
+| F2       | Narrow ridge                  | Converged near ridge peak                   |
+| F3       | Shallow local basin           | Stable convergence within basin             |
+| F4       | Multiple plateaus             | Global best found mid-project               |
+| F5       | Monotonic then nonlinear      | Best achieved before final round            |
+| F6       | Highly sensitive / unstable   | Conservative best configuration retained    |
+| F7       | Clear global optimum          | Early optimum re-confirmed                  |
+| F8       | Hard saturation plateau       | Fully saturated; repeated identical results |
+
 Overall, the project achieved robust convergence across all functions, with final inputs selected based on the strongest observed evidence rather than speculative improvement. The results validate the phased optimisation strategy of exploration, refinement, and lock-in adopted throughout the capstone.
