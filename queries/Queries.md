@@ -1,1 +1,1 @@
-queries/ – stores my weekly input submissions in text format.
+queries/ – stores my weekly input and output submissions in text format.
