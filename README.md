@@ -160,3 +160,45 @@ Week 10 focused on consolidating gains while managing late-stage risk.
 
 By this point, optimisation had transitioned from discovery to **management**, reflecting the realities of optimisation under strict computational constraints.
 
+### **Week 11 → Confirmation and Cluster Validation**
+
+By Week 11, the optimisation process had clearly entered a confirmation phase. Most functions were operating within well-defined regions, and the key objective shifted from improvement to validating that observed optima were stable rather than accidental.
+
+- **F2, F3, F4, F6, F7:** Queries were chosen close to previously high-performing configurations to confirm whether these regions represented genuine optima or narrow, unstable peaks.
+- **F5:** Continued to show meaningful gains, justifying one final controlled exploitation step.
+- **F1 and F8:** Fully frozen due to flat behaviour (F1) and confirmed saturation (F8).
+
+At this stage, optimisation decisions were deliberately conservative. Any exploratory move required strong justification, and rollback to known strong points was preferred over speculative improvement. This mirrors real-world optimisation practice, where late-stage experimentation is often risk-managed rather than aggressive.
+
+### **Week 12 → Final Refinement and Lock-In Preparation**
+
+Week 12 functioned as the final refinement round before lock-in. The emphasis was on ensuring that each function’s best-performing configuration was both reproducible and defensible.
+
+- **F5:** Achieved its strongest observed performance, confirming the monotonic-but-nonlinear behaviour identified earlier.
+- **F2, F3, F4, F6:** Minor regressions in some cases reinforced the conclusion that earlier points represented better optima.
+- **F7:** Reconfirmed that the global best had been discovered early and had not been surpassed.
+- **F1 and F8:** Continued to show invariant behaviour.
+
+Rather than chasing marginal gains, this week focused on evidence consolidation. The results clarified which week produced the global best for each function, directly informing the final submission.
+
+### **Week 13 → Final Lock-In Submission**
+
+The final week was treated explicitly as a lock-in phase, not an optimisation phase.
+
+For each function, the submitted input corresponded to the single best-performing configuration observed across all thirteen weeks, regardless of when it was discovered. No further exploration or extrapolation was attempted.
+
+This approach reflects best practice in black-box optimisation: when evaluation budgets are exhausted, the goal is not speculative improvement, but robust decision-making based on empirical evidence. In several cases, this meant reverting to earlier configurations that had proven superior to later refinements.
+
+## 5. Closing Reflection
+
+This capstone project demonstrated that effective black-box optimisation is less about applying a single algorithm and more about adaptive reasoning under uncertainty. Over thirteen weeks, the strategy evolved from broad exploration to structured refinement, and finally to disciplined convergence.
+
+Key lessons reinforced through this process include:
+
+- The importance of early structural diagnosis (e.g. identifying flat, monotonic, or basin-like functions).
+- The value of trust-region refinement and rollback over aggressive late-stage exploration.
+- Knowing when to stop optimising and prioritise stability, reproducibility, and defensibility.
+
+Beyond the numerical results, the project strengthened my ability to reason about optimisation in constrained, real-world settings—skills directly transferable to ML applications in areas such as hyperparameter tuning, experimental design, finance, and healthcare analytics.
+
+Overall, the final submission reflects not just the best values achieved, but a mature optimisation strategy grounded in evidence, risk awareness, and clear decision-making.
