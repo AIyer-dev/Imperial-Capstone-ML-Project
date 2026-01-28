@@ -202,3 +202,18 @@ Key lessons reinforced through this process include:
 Beyond the numerical results, the project strengthened my ability to reason about optimisation in constrained, real-world settings—skills directly transferable to ML applications in areas such as hyperparameter tuning, experimental design, finance, and healthcare analytics.
 
 Overall, the final submission reflects not just the best values achieved, but a mature optimisation strategy grounded in evidence, risk awareness, and clear decision-making.
+
+## 6. Results Summary
+
+Across thirteen optimisation iterations, the final submissions reflect the best empirically observed configurations for each black-box function. Rather than relying on late-stage extrapolation, the final results prioritise stability, reproducibility, and evidence-based selection.
+
+- **F1:** Identified as effectively flat early in the process; no meaningful dependence on inputs was observed.
+- **F2:** Exhibited a narrow ridge structure with strong sensitivity to one dimension; final performance confirms convergence near this ridge.
+- **F3:** Showed a shallow local basin; multiple nearby configurations produced similar outcomes, indicating stable convergence.
+- **F4:** Contained multiple plateaus; the global best was discovered mid-project, with later rounds confirming landscape complexity rather than improving performance.
+- **F5:** Demonstrated strong monotonic improvement followed by saturation; the best result was achieved prior to the final round, highlighting nonlinear behaviour.
+- **F6:** Highly sensitive and unstable; performance varied significantly with small perturbations, underscoring the importance of conservative refinement.
+- **F7:** Reached a clear global optimum early in the project, which was never surpassed and successfully re-confirmed in later rounds.
+- **F8:** Displayed a hard saturation plateau once key dimensions were maximised; repeated submissions produced identical outputs.
+
+Overall, the project achieved robust convergence across all functions, with final inputs selected based on the strongest observed evidence rather than speculative improvement. The results validate the phased optimisation strategy of exploration, refinement, and lock-in adopted throughout the capstone.
